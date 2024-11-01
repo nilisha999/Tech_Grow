@@ -1,0 +1,118 @@
+.app-container {
+  background-image: url("https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png");
+  background-size: cover;
+  height: 150vh;
+}
+
+@media screen and (min-width: 768px) {
+  .app-container {
+    background-image: url("https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png");
+  }
+}
+
+.stopwatch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem; /* Using rem for better scalability */
+}
+
+@media screen and (min-width: 992px) {
+  .stopwatch-container {
+    align-items: flex-start;
+    margin-left: 10%; /* Use percentage for margin */
+  }
+}
+
+.stopwatch {
+  color: aquamarine;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem; /* Using rem */
+  font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  .stopwatch {
+    font-size: 4rem; /* Using rem */
+  }
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  max-width: 90%; /* Use max-width instead of fixed width */
+  border-radius: 12px;
+  padding: 2rem; /* Using rem */
+  box-shadow: 0px 4px 40px rgba(23, 31, 70, 0.16);
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+}
+
+.timer-image {
+  margin-right: 0.5rem; /* Using rem */
+}
+
+.heading {
+  color: darkslateblue;
+  font-size: 1.5rem; /* Adjusting font size */
+  font-weight: 500;
+}
+
+.stopwatch-timer {
+  color: darkred;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem; /* Using rem */
+  font-weight: 500;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .stopwatch-timer {
+    font-size: 4rem; /* Using rem */
+  }
+}
+
+.timer-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%; /* Ensures buttons take full width */
+}
+
+.button {
+  color: antiquewhite;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem; /* Using rem */
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.5rem 1rem; /* Using rem for padding */
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding: 0.75rem 1.5rem; /* Adjusting padding for larger screens */
+  }
+}
+
+.start-button {
+  background-color: darkturquoise;
+  margin-right: 1rem; /* Using rem */
+}
+
+.stop-button {
+  background-color: red;
+  margin-right: 1rem; /* Using rem */
+}
+
+.reset-button {
+  background-color: orange;
+  margin-right: 1rem; /* Using rem */
+}
